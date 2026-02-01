@@ -3,13 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>Help Abandoned Dogs</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button id="theme-toggle">Toggle Theme</button>
-  <button onclick="console.log('hello');">Press me</button>
+  <header>
+    <h1>Find a Forever Home</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://plus.unsplash.com/premium_photo-1677094311603-3183315a6567?q=80&w=2070&auto=format&fit=crop" alt="Cute dog looking for a home" width="600">
+      <h2>Your Donation Can Save a Life</h2>
+      <p>Every year, millions of dogs are abandoned. With your help, we can provide them with food, shelter, and medical care while we find them loving forever homes.</p>
+    </section>
+
+    <section class="donation">
+      <h3>Make a Donation</h3>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="donation-info">
+        <span id="current-amount">$0</span> raised of <span id="goal-amount">$10,000</span>
+      </div>
+      <div class="donation-buttons">
+        <button class="donation-amount" data-amount="10">$10</button>
+        <button class="donation-amount" data-amount="25">$25</button>
+        <button class="donation-amount" data-amount="50">$50</button>
+        <input type="number" id="custom-amount" placeholder="Custom Amount">
+        <button id="donate-btn">Donate Now</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Find a Forever Home</p>
+  </footer>
+
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
