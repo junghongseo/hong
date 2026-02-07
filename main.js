@@ -6,38 +6,19 @@ themeToggle.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
 });
 
-// Donation Logic
-const donationButtons = document.querySelectorAll('.donation-amount');
-const customAmountInput = document.getElementById('custom-amount');
-const donateBtn = document.getElementById('donate-btn');
-const progress = document.getElementById('progress');
-const currentAmountSpan = document.getElementById('current-amount');
+// Contact Form
+const contactForm = document.querySelector('.contact form');
 
-const goalAmount = 10000;
-let currentAmount = 0;
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = contactForm.querySelector('input[name="name"]').value;
+  const email = contactForm.querySelector('input[name="email"]').value;
+  const message = contactForm.querySelector('textarea[name="message"]').value;
 
-function updateDonationProgress() {
-  const percentage = (currentAmount / goalAmount) * 100;
-  progress.style.width = `${percentage}%`;
-  currentAmountSpan.textContent = `$${currentAmount.toLocaleString()}`;
-}
-
-donationButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const amount = parseInt(button.dataset.amount, 10);
-    currentAmount += amount;
-    updateDonationProgress();
-  });
-});
-
-donateBtn.addEventListener('click', () => {
-  const customAmount = parseInt(customAmountInput.value, 10);
-  if (!isNaN(customAmount) && customAmount > 0) {
-    currentAmount += customAmount;
-    updateDonationProgress();
-    customAmountInput.value = '';
+  if (name && email && message) {
+    alert('Thank you for your message! We will get back to you soon.');
+    contactForm.reset();
+  } else {
+    alert('Please fill out all fields.');
   }
 });
-
-// Initialize
-updateDonationProgress();

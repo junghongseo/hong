@@ -1,36 +1,34 @@
-# Hong Project Blueprint
+# Oatter - Oatmeal Selling Website
 
 ## Overview
 
-A donation website for abandoned dogs, featuring a dark/white mode toggle and a simulated donation interface.
+Oatter is a modern, clean, and responsive e-commerce website for selling high-quality oatmeal. The website will showcase different oatmeal products, tell the story behind the brand, and provide an easy way for customers to get in touch.
 
-## Style, Design, and Features
+## Features
 
-*   **Initial Version:**
-    *   A single `index.html` file with "Hello, world!" heading.
-    *   A "Press me" button with a console log action.
-*   **Dark/White Mode Feature:**
-    *   A "Toggle Theme" button is added.
-    *   `style.css` defines color variables for light and dark themes.
-    *   `main.js` handles the theme toggling logic.
-*   **Donation Site Transformation:**
-    *   The page is redesigned to be a donation site for abandoned dogs.
-    *   **Content:** The title, header, and text are updated to reflect the new purpose. A hero section with a dog image is added.
-    *   **Donation Interface:** A donation section is added with:
-        *   A progress bar to show donation progress towards a goal.
-        *   Preset donation amount buttons ($10, $25, $50).
-        *   A custom amount input field.
-        *   A "Donate Now" button.
-    *   **Styling:** The `style.css` file is updated with a new color scheme, fonts, and layout for the donation page, including styles for all the new elements.
-    *   **Interactivity:** `main.js` is updated to handle donation logic, updating the progress bar and the total amount raised when a donation is made.
+*   **Responsive Design:** The website will be fully responsive and work on all devices.
+*   **Modern UI/UX:** The design will be clean and modern, with a focus on user experience.
+*   **Product Showcase:** A "Featured Products" section will highlight the different oatmeal flavors.
+*   **About Us:** A section to tell the story of the Oatter brand.
+*   **Contact Form:** A simple contact form for customer inquiries.
+*   **Dark/Light Theme:** A theme toggle will allow users to switch between dark and light modes.
 
-## Current Task
+## Design
 
-*   **Request:** 그럼 이번엔 이 사이트를 유기견 기부를 위한 모금 사이트로 만들고 이걸git에 main이 아닌dev로 배포해줘. (This time, make this site a fundraising site for abandoned dogs and deploy it to git not as main but as dev.)
-*   **Plan:**
-    1.  [x] Create and switch to a new `dev` branch.
-    2.  [x] Update `index.html` with the structure and content for the donation page.
-    3.  [x] Update `style.css` with styles for the new donation page.
-    4.  [x] Update `main.js` with the logic for the donation progress bar and buttons.
-    5.  [x] Commit the changes to the `dev` branch.
-    6.  [x] Push the `dev` branch to the remote repository.
+*   **Color Palette:**
+    *   Primary: `#A0522D` (Sienna)
+    *   Secondary: `#F4A460` (Sandy Brown)
+    *   Background (Light): `#FDF5E6` (Old Lace)
+    *   Background (Dark): `#2C1F17`
+    *   Text (Light): `#3B2F2F`
+    *   Text (Dark): `#EAE0D5`
+*   **Typography:**
+    *   Headings: "Georgia", serif
+    *   Body: "Helvetica Neue", sans-serif
+
+## Current Plan
+
+*   [x] Create `blueprint.md`
+*   [x] Update `index.html` with new structure and content.
+*   [x] Update `style.css` with new styles and color palette.
+*   [x] Update `main.js` to remove donation logic and add new functionality.
